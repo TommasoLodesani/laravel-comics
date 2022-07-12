@@ -4,17 +4,20 @@
 
 @section('pageMain')
     <main>
+        <section id="products">
+            <div id="container_contents">
 
-        <div id="container_icon">
+                @foreach ($arrComics as $comic)
+                    <div class="product">
+                        <img src="{{$comic['thumb']}}" alt="">
+                        <h5>{{$comic['series']}}</h5>
+                    </div>
+                @endforeach
 
-            @foreach ($arrComics as $comic)
-                <div class="product">
-                    <img src="{{$comic['thumb']}}" alt="">
-                    <h5>{{$comic['series']}}</h5>
-                </div>
-            @endforeach
+            </div>
 
-        </div>
+        </section>
+
 
 
 

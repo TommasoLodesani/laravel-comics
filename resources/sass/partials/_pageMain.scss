@@ -1,0 +1,40 @@
+#products{
+    background-color: #1c1c1c;
+
+    #container_contents {
+        // text-align: center;
+        width: 70%;
+        margin: auto;
+        // debug
+        // height: 130px;
+        // background-color: black;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 0;
+        text-align: left;
+
+
+
+        .product {
+            flex-basis: calc(100% / 7);
+            padding: 10px;
+
+            img {
+                max-width: 100%;
+
+            }
+
+            h5 {
+                color: white;
+            }
+
+        }
+
+    }
+
+
+
+}
+
+
+
