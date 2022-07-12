@@ -11,6 +11,8 @@
 
     @include('partials.header')
 
+    @include('partials.jumbotron')
+
     @yield('pageMain')
 
     @include('partials.footer')
