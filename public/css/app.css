@@ -1,3 +1,42 @@
+header {
+  width: 70%;
+  margin: auto;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 80px;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+header ul li a:hover {
+  color: #0c7cec;
+}
+
+header ul li a.here {
+  border-bottom: solid 4px #0c7cec;
+  padding-bottom: 47px;
+  color: #0c7cec;
+}
+
 #products {
   background-color: #1c1c1c;
 }

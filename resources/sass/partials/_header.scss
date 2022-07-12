@@ -1,0 +1,40 @@
+header{
+    width: 70%;
+    margin: auto;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img{
+      height: 80px;
+    }
+
+    ul{
+      list-style-type: none;
+
+      li{
+        display: inline-block;
+        padding: 0 15px;
+
+        a{
+          text-decoration: none;
+          color: black;
+          font-size: 12px;
+          font-weight: bold;
+
+          &:hover{
+            color: #0c7cec;
+          }
+          &.here{
+            border-bottom: solid 4px #0c7cec;
+            padding-bottom: 47px;
+            color: #0c7cec;
+          }
+        }
+
+      }
+
+    }
+
+  }
