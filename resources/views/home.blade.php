@@ -8,10 +8,16 @@
             <div id="container_contents">
 
                 @foreach ($arrComics as $comic)
-                    <div class="product">
-                        <img src="{{$comic['thumb']}}" alt="">
-                        <h5>{{$comic['series']}}</h5>
+
+                     <div class="product">
+                        <a href="">
+                            <img src="{{$comic['thumb']}}" alt="">
+                            <h5>{{$comic['series']}}</h5>
+
+                        </a>
                     </div>
+
+
                 @endforeach
 
             </div>
