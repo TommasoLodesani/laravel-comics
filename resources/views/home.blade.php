@@ -5,15 +5,23 @@
 @section('pageMain')
     <main>
 
-        <ul>
-        @foreach ($arrComics as $comic)
+        <div id="container_icon">
 
-            <li> {{$comic['title']}} </li>
+            @foreach ($arrComics as $comic)
+                <div class="product">
+                    <img src="{{$comic['thumb']}}" alt="">
+                    <h5>{{$comic['series']}}</h5>
+                </div>
+            @endforeach
 
-        @endforeach
-        </ul>
+        </div>
+
+
+
     </main>
 
 
 @endsection
+
+
 
