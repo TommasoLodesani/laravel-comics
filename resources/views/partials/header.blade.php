@@ -5,7 +5,7 @@
       <ul>
         @foreach (config('linkHeader') as $link)
         <li>
-          <a href="link.url"> {{$link['text']}}</a>
+          <a href="{{route($link['route'])}}"> {{$link['text']}}</a>
         </li>
 
         @endforeach

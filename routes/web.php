@@ -17,6 +17,7 @@ Route::get('/', function () {
     $arrComics = config('comics');
 
     return view('home', [
+        'pageTitle' => 'DC Comics - Home',
         'arrComics' => $arrComics,
 
     ]);

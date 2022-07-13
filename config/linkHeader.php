@@ -4,53 +4,53 @@ return [
 
     [
         'text' => "CHARACTERS",
-        'url' => "#",
-        'current' => false
+        'route' => 'home'
+
     ],
     [
         'text' => "COMICS",
-        'url' => "#",
-        'current' => true
+        'route' => 'home'
+
     ],
     [
         'text' => "MOVIE",
-        'url' => "#",
-        'current' => false
+        'route' => 'home'
+
     ],
     [
         'text' => "TV",
-        'url' => "#",
-        'current' => false
+        'route' => 'home'
+
     ],
     [
         'text' => "GAMES",
-        'url' => "#",
-        'current' => false
+        'route' => 'home'
+
     ],
     [
         'text' => "COLLECTIBLES",
-        'url' => "#",
-        'current' => false
+        'route' => 'home'
+
     ],
     [
         'text' => "VIDEOS",
-        'url' => "#",
-        'current' => false
+        'route' => 'home'
+
     ],
     [
         'text' => "FANS",
-        'url' => "#",
-        'current' => false
+        'route' => 'home'
+
     ],
     [
         'text' => "NEWS",
-        'url' => "#",
-        'current' => false
+        'route' => 'home'
+
     ],
     [
         'text' => "SHOP",
-        'url' => "#",
-        'current' => false
+        'route' => 'home'
+
     ]
 
 
