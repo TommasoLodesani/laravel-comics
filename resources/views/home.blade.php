@@ -10,7 +10,7 @@
                 @foreach ($arrComics as $comic)
 
                      <div class="product">
-                        <a href="">
+                        <a href="{{route('prodotto', ['id' => $comic['id'] ])}}">
                             <img src="{{$comic['thumb']}}" alt="">
                             <h5>{{$comic['series']}}</h5>
 

@@ -3,7 +3,7 @@
 
     <nav>
       <ul>
-        @foreach ($arrLinkHeader as $link)
+        @foreach (config('linkHeader') as $link)
         <li>
           <a href="link.url"> {{$link['text']}}</a>
         </li>

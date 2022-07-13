@@ -15,14 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $arrComics = config('comics');
-    $arrLinkHeader = config('linkHeader');
+
     return view('home', [
         'arrComics' => $arrComics,
-        'arrLinkHeader' => $arrLinkHeader,
+
     ]);
 })->name('home');
 
-Route::get('/prodotti/{:id}', function ($id) {
+Route::get('/prodotto/{id}', function ($id) {
     $arrComics = config('comics');
     $comic = null;
     foreach ($arrComics as $value) {
@@ -31,7 +31,13 @@ Route::get('/prodotti/{:id}', function ($id) {
             break;
         }
     }
-    return view('home', [
-        'arrComics' => $arrComics,
-    ]);
-})->name('home');
+
+    if($comic){
+        return view('comic', [
+            'pageTitle' => 'Comic - DC Comics',
+            'comic' => $comic
+        ]);
+    } else{
+        abort(404);
+    }
+})->name('prodotto');
