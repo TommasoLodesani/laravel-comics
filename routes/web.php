@@ -21,3 +21,17 @@ Route::get('/', function () {
         'arrLinkHeader' => $arrLinkHeader,
     ]);
 })->name('home');
+
+Route::get('/prodotti/{:id}', function ($id) {
+    $arrComics = config('comics');
+    $comic = null;
+    foreach ($arrComics as $value) {
+        if($value['id'] == $id){
+            $comic = $value;
+            break;
+        }
+    }
+    return view('home', [
+        'arrComics' => $arrComics,
+    ]);
+})->name('home');
